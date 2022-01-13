@@ -1,9 +1,9 @@
 version:2.1
 
 workflows:
-  test-deploy1:
+  testdeploy1:
     jobs:
-     - test1
+      - test1
     
 jobs:
   test1:
