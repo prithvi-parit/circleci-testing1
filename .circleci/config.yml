@@ -8,6 +8,8 @@ jobs:
        - checkout
        - run: date
        - run: python3 hello.py
+       - run: python3 hi.py
+       
        
        
 
