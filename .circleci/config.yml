@@ -2,15 +2,13 @@ version:2.1
 
 
 jobs:
-  test1:
+  testing:
     docker:
-    - image: circleci/python:3.6.4 
+       - image: circleci/python:3.6.4 
     steps:
-    - checkout
-    - run:
-        name: run test
-        cmd: date
+       - checkout
+       - run: date
  workflows:
   testdeploy1:
     jobs:
-      - test1
+       - test1
