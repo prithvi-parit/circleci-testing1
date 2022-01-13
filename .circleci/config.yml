@@ -1,15 +1,16 @@
-version:2.1
-orbs:
-  node: circleci/python:3.6.4 
+version: 2.1
 
 jobs:
-  
-    docker:
-       - image: circleci/python:3.6.4 
-    steps:
+   test1: 
+      docker:
+        - image: cimg/python:3.6.4 
+      steps:
        - checkout
+       - run: date
        
- workflows:
-  testdeploy1:
-    jobs:
-       - test1
+
+
+workflows:
+    testdeploy1:
+       jobs:
+          - test1
