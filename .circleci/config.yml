@@ -6,9 +6,8 @@ jobs:
         - image: cimg/python:3.6.4 
       steps:
        - checkout
-       - run: date
        
-
+       
 
 workflows:
     testdeploy1:
