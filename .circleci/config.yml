@@ -1,10 +1,6 @@
 version:2.1
 
-workflows:
-  testdeploy1:
-    jobs:
-      - test1
-    
+
 jobs:
   test1:
     docker:
@@ -14,3 +10,7 @@ jobs:
     - run:
         name: run test
         cmd: date
+ workflows:
+  testdeploy1:
+    jobs:
+      - test1
