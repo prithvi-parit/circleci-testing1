@@ -17,12 +17,12 @@ workflows:
    version: 2
    testdeploy1:
        triggers: #use the triggers key to indicate a scheduled build
-         - schedule:
-             cron: "* * * * *" # use cron syntax to set the schedule
-             filters:
-               branches:
-                  only:
-                     - main
+         #- schedule:
+             #cron: "* * * * *" # use cron syntax to set the schedule
+          #   filters:
+           #    branches:
+            #      only:
+             #        - main
        jobs:
           - test1
     
